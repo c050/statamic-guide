@@ -4,13 +4,13 @@
         <a href="/">Main Page</a>
         <ul>
             {{ nav:collection:pages }}
-                <li><a href="{{ url }}" class="{{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+                <li><a href="{{ url }}"> {{title}} </a></li>
             {{ /nav:collection:pages }}
         </ul>
     </div>
     <ul>
         {{ nav:collection:pages :from="segment_1"}}
-                <li><a href="{{ url }}" class="{{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+                <li><a href="{{ url }}"> {{title}} </a></li>
         {{ /nav:collection:pages }}
     </ul>
 </nav>

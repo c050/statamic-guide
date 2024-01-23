@@ -159,6 +159,12 @@ Desde el panel de control se puede acceder a la sección de *Collections*. Dentr
 
 ## Construyendo una Navbar
 
+*Statamic* permite iterar sobre los elementos de una *structured collection* para generar *html*. Un caso de uso de esto es la barra de navegación. A continuación se muestra código *html* para generar una barra de navegación a partir de los elementos 
+
+  ``` html
+  {{ partial:partial-doc-name }} 
+  ```
+
 ## Información de *New Project*
 
 ## *Superser*
