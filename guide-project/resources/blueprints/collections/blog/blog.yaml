@@ -83,6 +83,37 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+      -
+        display: Meta
+        instructions: 'Metadata for SEO'
+        fields:
+          -
+            handle: meta_title
+            field:
+              input_type: text
+              character_limit: 60
+              antlers: false
+              type: text
+              display: 'Meta Title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: meta_description
+            field:
+              character_limit: '160'
+              antlers: false
+              type: textarea
+              display: 'Meta Description'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   sidebar:
     display: Sidebar
     sections:
