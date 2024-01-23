@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<nav>
-    <div>
-        <a href="/">
-            <ul class="bg-black text-white px-4 flex items-center space-x-8">
-                <li><a href="/item1" class="py-2 block">Item 1</a></li>
-                <li><a href="/item2" class="py-2 block">Item 2</a></li>
-                <li><a href="/item3" class="py-2 block">Item 3</a></li>
-            </ul>
-        </a>
+<!doctype html>
+<nav class="py-12 max-w-4xl mx-auto">
+    <div class="flex items-center justify-between">
+        <a href="/" class="font-bold text-2xl">Main Page</a>
+        <ul class="flex items-center space-x-8 font-semibold">
+            {{ nav:collection:pages }}
+                <li><a href="{{ url }}" class="py-4 block {{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+            {{ /nav:collection:pages }}
+        </ul>
     </div>
+    <ul class="bg-black text-white px-4 flex items-center space-x-8">
+        {{ nav:collection:pages :from="segment_1"}}
+                <li><a href="{{ url }}" class="py-4 block {{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+        {{ /nav:collection:pages }}
+    </ul>
 </nav>
