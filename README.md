@@ -159,10 +159,24 @@ Desde el panel de control se puede acceder a la sección de *Collections*. Dentr
 
 ## Construyendo una Navbar
 
-*Statamic* permite iterar sobre los elementos de una *structured collection* para generar *html*. Un caso de uso de esto es la barra de navegación. A continuación se muestra código *html* para generar una barra de navegación a partir de los elementos 
+*Statamic* permite iterar sobre los elementos de una *structured collection* para generar *html*. Un caso de uso de esto es la barra de navegación. A continuación se muestra código *html* para generar una barra de navegación a partir de los elementos de pages:
 
   ``` html
-  {{ partial:partial-doc-name }} 
+ <nav>
+    <div>
+        <a href="/">Main Page</a>
+        <ul>
+            {{ nav:collection:pages }}
+                <li><a href="{{ url }}"> {{title}} </a></li>
+            {{ /nav:collection:pages }}
+        </ul>
+    </div>
+    <ul>
+        {{ nav:collection:pages :from="segment_1"}}
+                <li><a href="{{ url }}"> {{title}} </a></li>
+        {{ /nav:collection:pages }}
+    </ul>
+</nav>
   ```
 
 ## Información de *New Project*
