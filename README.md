@@ -197,6 +197,21 @@ Otra opción puede ser:
 
 Así, se tiene acceso a múltiples variables para generar las rutas.
 
+Por otra parte, al momento de crear el *scaffold*, se crea un directorio dentro de *resources/views* con el nombre de la *collection*. Dentro, se crean dos documentos:
+
+``` bash
+index.antlers.html
+show.antlers.html
+```
+
+### Index
+
+Corresponde a la vista donde se muestran todos los objetos de la *collection*.
+
+### Show
+
+Corresponde a la vista donde se muestra in objeto particular de la *collection*.
+
 ## Blueprints
 
 Dentro de un *blueprint* se definen campos y condiciones de visibilidad. Los *blueprints* controlan a qué campos tiene acceso el usuario al momento de publicar contenido. Asimismo, definen cómo van a ser los datos que van a manejar los desarrolladores al momento de diseñar el *front-end* del sitio.
