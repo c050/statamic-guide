@@ -129,6 +129,32 @@ Por ejemplo, si se busca mostrar el contenido de *title*, que fue asignado desde
 <h1> {{ title }} </h1>
 ```
 
+## Partials
+
+Se puede generar *templates* de vistas parciales para mantener código más limpio y reutilizable. Para esto, hay varias opciones:
+
+- Crear un directorio *partials* dentro de *resources/views* y dentro crear documentos *html* de la forma
+
+    ``` bash
+    partial-doc-name.antlers.html
+    ```
+
+  En este caso basta con llamar dentro de otro *template* al documento parcial de la siguiente forma:
+
+  ``` html
+  {{ partial:partial-doc-name }} 
+  ```
+
+- Crear directamente dentro de *resources/views* un documento *html* que debe ser nombrado con un "**_**" por delante de la siguiente forma:
+
+  ``` bash
+  _partial-doc-name.antlers.html
+  ```
+
+Puede ser llamado de la misma forma que antes. Es importante notar que no es necesario poner el "**_**" delante del nombre al momento de llamar al documento parcial.
+
+## Construyendo una Navbar usando una *structured collection*
+
 ## New Project Info
 
 ## Superser
