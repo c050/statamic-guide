@@ -1,0 +1,21 @@
+<!doctype html>
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-8xl font-black text-center">{{ title }}</h1>
+    <div class="grid grid-flow-col grid-cols-2 gap-8 mt-16">
+        {{ collection:blog }}
+        <a href="{{ url }}" class="w-full h-full border-gray-400 shadow hover:shadow-lg transition rounded">
+            <img src="{{ image }}" alt=" image:alt" class="rounded-t">
+            <article class="p-4">
+                <div class="flex items-center">
+                    <img src="{{ author:avatar }}" alt="" class="h-12 w-12 rounded-full">
+                    <div class="leading-tight ml-3">
+                        <p class="font-bold">{{ author:name }}</p>
+                        <p class="text-sm text-gray-600">{{ date }}</p>
+                    </div>
+                </div>
+                <h2 class="text-2xl font-bold leading-tight mt-4">{{ title }}</h2>
+            </article>
+        </a>
+        {{/collection:blog}}
+    </div>
+</div>
