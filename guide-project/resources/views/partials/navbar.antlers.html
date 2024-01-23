@@ -1,16 +1,16 @@
 <!doctype html>
-<nav class="py-12 max-w-4xl mx-auto">
-    <div class="flex items-center justify-between">
-        <a href="/" class="font-bold text-2xl">Main Page</a>
-        <ul class="flex items-center space-x-8 font-semibold">
+<nav>
+    <div>
+        <a href="/">Main Page</a>
+        <ul>
             {{ nav:collection:pages }}
-                <li><a href="{{ url }}" class="py-4 block {{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+                <li><a href="{{ url }}" class="{{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
             {{ /nav:collection:pages }}
         </ul>
     </div>
-    <ul class="bg-black text-white px-4 flex items-center space-x-8">
+    <ul>
         {{ nav:collection:pages :from="segment_1"}}
-                <li><a href="{{ url }}" class="py-4 block {{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+                <li><a href="{{ url }}" class="{{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
         {{ /nav:collection:pages }}
     </ul>
 </nav>
