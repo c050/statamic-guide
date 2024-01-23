@@ -1,8 +1,9 @@
 <!doctype html>
 <div class="max-w-4xl mx-auto">
     <h1 class="text-8xl font-black text-center">{{ title }}</h1>
-    <div class="grid grid-flow-col grid-cols-2 gap-8 mt-16">
-        {{ collection:blog }}
+    {{ collection:blog paginate="3" as="posts"}}
+    <div class="grid grid-flow-col grid-cols-3 gap-8 mt-16">
+        {{ posts }}
         <a href="{{ url }}"
             class="w-full h-full border-gray-400 shadow hover:shadow-lg transition rounded">
             <img src="{{ image }}" alt=" image:alt" class="rounded-t">
@@ -19,6 +20,16 @@
                     }}</h2>
             </article>
         </a>
-        {{ /collection:blog }}
+        {{ /posts }}
     </div>
+    {{ paginate }}
+    <div class="flex items-center justify-center space-x-8 text-center mx-auto">
+        <div class="grid grid-flow-col grid-cols-3 gap-8 mt-16">
+            <a href="{{ prev_page }}"> Anterior </a>
+            {{ current_page }} de {{ total_pages }} páginas
+            <a href="{{ next_page }}"> Siguiente </a>
+        </div>
+    </div>
+    {{ /paginate}}
+    {{ /collection:blog }}
 </div>
