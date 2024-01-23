@@ -203,7 +203,7 @@ Dentro de un *blueprint* se definen campos y condiciones de visibilidad. Los *bl
 
 Para crear un *blueprint* basta con ir a la sección *Blueprints* del panel de control y seleccionar los campos (*fields*) que van a ser rellenados por los usuarios al momento de generar contenido.
 
-## Información de *New Project*
+## Información de *Guide Project*
 
 ## *Superser*
 
