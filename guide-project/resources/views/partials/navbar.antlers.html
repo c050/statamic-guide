@@ -10,8 +10,10 @@
     </div>
     <ul class="bg-black text-white px-4 flex items-center space-x-8">
         {{ nav:collection:pages :from="segment_1"}}
-            {{ if ! no_results}}
-                <li><a href="{{ url }}" class="py-4 block {{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
+            {{ if no_results}}
+                <li class="w-full h-2 bg-black"></li>
+            {{ else }}
+                <li><a href="{{ url }}" class="py-2 block {{ is_current || is_parent ?= 'text-red-700' }}"> {{title}} </a></li>
             {{/if}}
         {{ /nav:collection:pages }}
     </ul>
