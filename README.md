@@ -197,6 +197,12 @@ Otra opción puede ser:
 
 Así, se tiene acceso a múltiples variables para generar las rutas.
 
+## Blueprints
+
+Dentro de un *blueprint* se definen campos y condiciones de visibilidad. Los *blueprints* controlan a qué campos tiene acceso el usuario al momento de publicar contenido. Asimismo, definen cómo van a ser los datos que van a manejar los desarrolladores al momento de diseñar el *front-end* del sitio.
+
+Para crear un *blueprint* basta con ir a la sección *Blueprints* del panel de control y seleccionar los campos (*fields*) que van a ser rellenados por los usuarios al momento de generar contenido.
+
 ## Información de *New Project*
 
 ## *Superser*
