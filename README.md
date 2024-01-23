@@ -100,3 +100,16 @@ Además de contenido estático, se puede añadir contenido dinámico en las vist
 Por ejemplo, si se busca mostrar el contenido de *title*, que fue asignado desde el panel de control, y mostrarlo como un *h1*, basta con escribir un template que contenga:
 
 	<h1> {{ title }} </h1>
+
+
+# New Project Info
+
+## Superser 
+
+### Email
+
+	coavendano@uc.cl
+
+### Password
+
+	newprojectpassword
