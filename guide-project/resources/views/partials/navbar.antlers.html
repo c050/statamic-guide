@@ -10,7 +10,9 @@
     </div>
     <ul>
         {{ nav:collection:pages :from="segment_1"}}
+            {{ if ! no_results}}
                 <li><a href="{{ url }}"> {{title}} </a></li>
+            {{/if}}
         {{ /nav:collection:pages }}
     </ul>
 </nav>
