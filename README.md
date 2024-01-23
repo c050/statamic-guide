@@ -155,6 +155,7 @@ Puede ser llamado de la misma forma que antes. Es importante notar que no es nec
 
 ## Construyendo una Navbar usando una *structured collection*
 
+
 ## New Project Info
 
 ## Superser
