@@ -181,6 +181,22 @@ Desde el panel de control se puede acceder a la sección de *Collections*. Dentr
 </nav>
   ```
 
+## Creación, *scaffolding* y *routing* de una *collection*
+
+En el panel de control, dentro de la sección de *Collections* se puede crear una nueva *collection*. Luego, dentro de la *collection* se pueden crear *scaffolds* para facilitar la visualización de la información. En relación con la configuración, para las funcionalidades básicas de, por ejemplo, un blog, no es necesario cambiar las configuraciones por defecto. Solamente se requiere habilitar la visualización de las fechas y cambiar lass rutas. Un ejemplo de ruta para un blog simple puede ser la siguiente:
+
+``` bash
+/blog/{slug}
+```
+
+Otra opción puede ser:
+
+``` bash
+/blog/{year}-{month}-{slug}
+```
+
+Así, se tiene acceso a múltiples variables para generar las rutas.
+
 ## Información de *New Project*
 
 ## *Superser*
