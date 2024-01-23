@@ -1,6 +1,6 @@
-# Guía básica de Statamic
+# Guía básica de *Statamic*
 
-## Setup Local en macOS
+## *Setup* Local en *macOS*
 
 Primero, se debe instalar [Laravel Herd](https://herd.laravel.com), que incluye *php*, entre otras herramientas necesarias para el funcionamiento de un proyecto de *Statamic*. Se requiere de *macOS* >= 12.0.
 
@@ -24,7 +24,7 @@ Una vez instalada la *CLI*, basta con ejecutar el siguiente comando para crear u
 statamic new project-name
 ```
 
-### Troubleshooting
+### *Troubleshooting*
 
 Existe la posibilidad de que la terminal no encuentre el comando *statamic*. En ese caso, se deben seguir las siguientes instrucciones.
 
@@ -69,7 +69,7 @@ http://your-project-name.test/cp
 
 Si bien la versión actual de *Statamic* es la 4, en el tutorial de instalación de la versión 3 se recomienda instalar *NPM* y *Tailwind* para una mejor experiencia desarrollando el *front end* de la página.
 
-### NPM
+### *NPM*
 
 *NPM* viene instalado con *Node.js* por lo que basta con instalar node desde su sitio oficial.
 Luego, se debe ejecutar el siguiente comando en la terminal para hacer el *build*:
@@ -129,7 +129,7 @@ Por ejemplo, si se busca mostrar el contenido de *title*, que fue asignado desde
 <h1> {{ title }} </h1>
 ```
 
-## Partials
+## *Partials*
 
 Se puede generar *templates* de vistas parciales para mantener código más limpio y reutilizable. Para esto, hay varias opciones:
 
@@ -153,20 +153,23 @@ Se puede generar *templates* de vistas parciales para mantener código más limp
 
 Puede ser llamado de la misma forma que antes. Es importante notar que no es necesario poner el "**_**" delante del nombre al momento de llamar al documento parcial.
 
-## Construyendo una Navbar usando una *structured collection*
+## *Structured collections*
 
+Desde el panel de control se puede acceder a la sección de *Collections*. Dentro de esta sección se puede crear *structured collections* que, como su nombre lo indica, son conjuntos de objetos estructurados en forma de árbol a los que se puede acceder desde el fron
 
-## New Project Info
+## Construyendo una Navbar
 
-## Superser
+## Información de *New Project*
 
-### Email
+## *Superser*
+
+### *Email*
 
 ``` bash
 coavendano@uc.cl
 ```
 
-### Password
+### *Password*
 
 ``` bash
 newprojectpassword
