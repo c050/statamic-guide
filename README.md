@@ -218,6 +218,10 @@ Dentro de un *blueprint* se definen campos y condiciones de visibilidad. Los *bl
 
 Para crear un *blueprint* basta con ir a la sección *Blueprints* del panel de control y seleccionar los campos (*fields*) que van a ser rellenados por los usuarios al momento de generar contenido.
 
+## Migrar a uso de Eloquent
+
+Para hacer que el proyecto haga uso de una base de datos en vez del sistema de archivos po defecto basta con seguir la guía indicada en el [repositorio](https://github.com/statamic/eloquent-driver). Esta migra todo el proyecto menos los usuarios. Para migrar los usuarios se debe seguir la [guia de _Statamic_](https://statamic.dev/tips/storing-users-in-a-database).
+
 ## Información de *Guide Project*
 
 ## *Superser*
@@ -233,3 +237,4 @@ coavendano@uc.cl
 ``` bash
 newprojectpassword
 ```
+
