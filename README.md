@@ -51,6 +51,13 @@ Tal como se indicó previamente, para crear un proyecto se debe ejecutar el sigu
 statamic new your-project-name
 ```
 
+Posteriormente, una vez con el sitio creado, se deben ejecutar los siguientes comandos para instalar los paquetes requeridos por *Statamic*:
+
+``` bash
+composer install
+npm install
+```
+
 Luego, se puede acceder al sitio generado desde el navegador accediendo al link:
 
 ``` bash
